@@ -1,0 +1,19 @@
+<Ui-offcanvas @small={{true}} as |canvas|>
+
+  <canvas.header>
+    <h2>Small</h2>
+  </canvas.header>
+
+  <canvas.body>
+    <Ui-tabs
+      @tabs={{tabs}}
+    />
+  </canvas.body>
+
+  <canvas.footer>
+    <button onclick={{action "close"}}>
+      Close
+    </button>
+  </canvas.footer>
+
+</Ui-offcanvas>
